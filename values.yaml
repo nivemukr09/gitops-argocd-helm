@@ -1,0 +1,4 @@
+image:
+  repository: demo-app       # Local image name
+  tag: "1.0"                 # Tag from docker build
+  pullPolicy: IfNotPresent
