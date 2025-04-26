@@ -6,16 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-username>/gitops-argocd-helm.git
+    repoURL: https://github.com/nivemukr09/gitops-argocd-helm.git
     targetRevision: HEAD
     path: demo-app
-    helm:
-      valueFiles:
-        - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: default
   syncPolicy:
     automated:
-      selfHeal: true
       prune: true
+      selfHeal: true
