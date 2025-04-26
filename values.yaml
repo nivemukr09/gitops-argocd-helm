@@ -2,3 +2,7 @@ image:
   repository: demo-app       # Local image name
   tag: "1.0"                 # Tag from docker build
   pullPolicy: IfNotPresent
+
+service:
+  type: NodePort             # Expose via Minikube IP
+  port: 80                   # Container port
